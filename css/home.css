@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
 .body {
   background-color: #f3f5fc;
 }
@@ -15,3 +17,39 @@
   left: 40px;
   top: 40px;
 }
+
+.texto-encriptado {
+  /* Ingrese el texto aqui */
+
+  position: absolute;
+  width: 577px;
+  min-height: 48px;
+  left: 240px;
+  top: 168px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0a3871;
+
+  border: none;
+
+  /* Tamaño automatico */
+  resize: none;
+  overflow: hidden;
+
+
+  
+}
+
+.texto-encriptado::placeholder {
+  color: #0a3871;
+  opacity: 1;
+}
+  
