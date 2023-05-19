@@ -4,29 +4,14 @@
   background-color: #f3f5fc;
 }
 
-.logo-alura {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 40px;
-
-  position: absolute;
-  width: 120px;
-  height: 48px;
-  left: 40px;
-  top: 40px;
+.textarea-encriptado {
+  min-height: 48px;
+  left: 240px;
+  top: 168px;
 }
 
 .texto-encriptado {
   /* Ingrese el texto aqui */
-
-  position: absolute;
-  width: 577px;
-  min-height: 48px;
-  left: 240px;
-  top: 168px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -43,13 +28,66 @@
   /* Tamaño automatico */
   resize: none;
   overflow: hidden;
-
-
-  
 }
 
 .texto-encriptado::placeholder {
   color: #0a3871;
   opacity: 1;
 }
+
+.mensaje-alerta {
+  /* Solo letras minúsculas y sin acentos */
+
+  width: 205px;
+  height: 18px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+  opacity: 0.8;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.alerta {
+  /* Uno al lado del otro */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Este código CSS define un contenedor de cuadrícula con dos columnas y cuatro filas, donde cada fila
+tiene la misma altura. La propiedad `grid-template-columns` establece que el ancho de cada columna
+sea la mitad del espacio disponible, y la propiedad `grid-template-rows` establece que la altura de
+cada fila sea un cuarto del espacio disponible. Las propiedades `grid-column-gap` y `grid-row-gap`
+establecen el espacio entre las columnas y las filas en 0 píxeles. Esta cuadrícula se usa para
+diseñar los diferentes elementos de la página, con cada elemento asignado a un área de cuadrícula
+específica usando la propiedad `grid-area`. */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
   
+  .logo-alura { grid-area: 1 / 1 / 2 / 2;  }
+  .textarea-encriptado { grid-area: 2 / 1 / 3 / 2; }
+  .alerta { grid-area: 3 / 1 / 4 / 2; }
+  .botones { grid-area: 4 / 1 / 5 / 2; }
+  .texto-desencriptado { grid-area: 1 / 2 / 5 / 3; }
+
