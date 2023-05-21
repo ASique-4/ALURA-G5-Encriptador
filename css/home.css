@@ -4,6 +4,33 @@ body {
   background-color: #f3f5fc;
 }
 
+footer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  color: #495057;
+
+  margin: 0px 0px 32px 0px;
+  text-align: center;
+
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0px 32px 0px;
+}
+
+.redes img {
+  height: 24px;
+  width: 24px;
+}
+
 .texto-ingresado {
   background: #f3f5fc;
   /* Ingrese el texto aqui */
