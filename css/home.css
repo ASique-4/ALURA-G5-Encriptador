@@ -4,44 +4,89 @@ body {
   background-color: #f3f5fc;
 }
 
+.texto-ingresado {
+  background: #f3f5fc;
+  /* Ingrese el texto aqui */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0a3871;
+
+  border: none;
+
+  /* Tamaño automatico */
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.texto-salida {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+  /* padding centrado */
+  padding: 32px 32px 32px 32px;
+
+  position: relative;
+
+  
+}
+
+.boton-copiar {
+  background: #ffffff;
+  border: 1px solid #0a3871;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 328px;
+  height: 67px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #0a3871;
+  
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  
+}
+
+
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
-  .textarea-encriptado {
+  .textarea-texto-ingresado {
     margin: 80px auto 0px auto;
     height: 251px;
     width: 343px;
   }
 
-  .texto-encriptado {
-    background: #f3f5fc;
-    /* Ingrese el texto aqui */
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    /* identical to box height, or 48px */
-
-    /* Dark blue/dark-blue-300 */
-
-    color: #0a3871;
-
-    border: none;
-
-    /* Tamaño automatico */
-    resize: none;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-
-  .logo-alura {
+  texto-salida .logo-alura {
     margin: 24px auto 0px 16px;
     height: 48px;
     width: 32px;
   }
 
-  .texto-encriptado::placeholder {
+  .texto-ingresado::placeholder {
     color: #0a3871;
     opacity: 1;
   }
@@ -127,7 +172,7 @@ body {
     width: 343px;
   }
 
-  .texto-desencriptado {
+  .texto-salida {
     min-height: 486px;
     width: auto;
     width: 327px;
@@ -184,7 +229,6 @@ body {
     margin: 0px 32px 243px 32px;
   }
 
-
   .parent {
     display: grid;
     grid-template-columns: auto;
@@ -196,7 +240,7 @@ body {
   .logo-alura {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .textarea-encriptado {
+  .textarea-texto-ingresado {
     grid-area: 2 / 1 / 3 / 2;
   }
   .alerta {
@@ -205,49 +249,26 @@ body {
   .botones {
     grid-area: 4 / 1 / 5 / 2;
   }
-  .texto-desencriptado {
+  .texto-salida {
     grid-area: 5 / 1 / 6 / 2;
   }
 }
 
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .textarea-encriptado {
+  .textarea-texto-ingresado {
     margin: 120px auto 0px auto;
     height: 548px;
     width: 688px;
   }
 
-  .texto-encriptado {
-    background: #f3f5fc;
-    /* Ingrese el texto aqui */
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    /* identical to box height, or 48px */
-
-    /* Dark blue/dark-blue-300 */
-
-    color: #0a3871;
-
-    border: none;
-
-    /* Tamaño automatico */
-    resize: none;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-
-  .logo-alura {
+  texto-salida .logo-alura {
     margin: 73px auto 0px 40px;
     height: 48px;
     width: 128px;
   }
 
-  .texto-encriptado::placeholder {
+  .texto-ingresado::placeholder {
     color: #0a3871;
     opacity: 1;
   }
@@ -334,7 +355,7 @@ body {
     width: 688px;
   }
 
-  .texto-desencriptado {
+  .texto-salida {
     min-height: 433px;
     width: auto;
     width: 688px;
@@ -391,7 +412,6 @@ body {
     margin: 0px 32px 243px 32px;
   }
 
-
   .parent {
     display: grid;
     grid-template-columns: auto;
@@ -403,7 +423,7 @@ body {
   .logo-alura {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .textarea-encriptado {
+  .textarea-texto-ingresado {
     grid-area: 2 / 1 / 3 / 2;
   }
   .alerta {
@@ -412,40 +432,17 @@ body {
   .botones {
     grid-area: 4 / 1 / 5 / 2;
   }
-  .texto-desencriptado {
+  .texto-salida {
     grid-area: 5 / 1 / 6 / 2;
   }
 }
 
 /* Estilos para computadoras */
 @media (min-width: 1024px) {
-  .textarea-encriptado {
+  .textarea-texto-ingresado {
     margin: 80px 80px 0px 240px;
     min-width: 577px;
     min-height: 635px;
-  }
-
-  .texto-encriptado {
-    background: #f3f5fc;
-    /* Ingrese el texto aqui */
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    /* identical to box height, or 48px */
-
-    /* Dark blue/dark-blue-300 */
-
-    color: #0a3871;
-
-    border: none;
-
-    /* Tamaño automatico */
-    resize: none;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
   }
 
   .logo-alura {
@@ -454,7 +451,7 @@ body {
     width: 128px;
   }
 
-  .texto-encriptado::placeholder {
+  .texto-ingresado::placeholder {
     color: #0a3871;
     opacity: 1;
   }
@@ -541,7 +538,7 @@ body {
     width: 680px;
   }
 
-  .texto-desencriptado {
+  .texto-salida {
     height: 944px;
     width: auto;
     min-width: 400px;
@@ -622,7 +619,7 @@ body {
   .logo-alura {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .textarea-encriptado {
+  .textarea-texto-ingresado {
     grid-area: 2 / 1 / 3 / 2;
   }
   .alerta {
@@ -631,7 +628,7 @@ body {
   .botones {
     grid-area: 4 / 1 / 5 / 2;
   }
-  .texto-desencriptado {
+  .texto-salida {
     grid-area: 1 / 2 / 5 / 3;
   }
 }
