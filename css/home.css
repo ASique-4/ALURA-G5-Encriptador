@@ -17,6 +17,21 @@ footer {
 
 }
 
+.button-encriptar:hover {
+  background: #001233;
+  color: #ffffff;
+}
+
+.button-desencriptar:hover {
+  background: #ced4da;
+  color: #0a3871;
+}
+
+.boton-copiar:hover {
+  background: #0a3871;
+  color: #ffffff;
+}
+
 .redes {
   display: flex;
   flex-direction: row;
