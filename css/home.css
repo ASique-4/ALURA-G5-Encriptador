@@ -105,7 +105,7 @@ texto-final
     width: 343px;
   }
 
-  texto-salida .logo-alura {
+  .logo-alura {
     margin: 24px auto 0px 16px;
     height: 48px;
     width: 32px;
@@ -287,7 +287,7 @@ texto-final
     width: 688px;
   }
 
-  texto-salida .logo-alura {
+  .logo-alura {
     margin: 73px auto 0px 40px;
     height: 48px;
     width: 128px;
