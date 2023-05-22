@@ -48,26 +48,22 @@ footer {
 
 .texto-ingresado {
   background: #f3f5fc;
-  /* Ingrese el texto aqui */
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 150%;
-  /* identical to box height, or 48px */
-
-  /* Dark blue/dark-blue-300 */
 
   color: #0a3871;
 
   border: none;
 
-  /* Tamaño automatico */
   resize: none;
-  overflow: hidden;
   width: 100%;
   height: 100%;
+
 }
+
+
 
 .texto-salida {
   font-family: "Inter";
@@ -480,15 +476,13 @@ texto-final
 /* Estilos para computadoras */
 @media (min-width: 1024px) {
   .textarea-texto-ingresado {
-    margin: 80px 80px 0px 240px;
+    margin: 80px 10% 0px 10%;
     min-width: 577px;
     min-height: 635px;
   }
 
   .logo-alura {
     margin: 40px 0px 0px 84px;
-    height: 48px;
-    width: 128px;
   }
 
   .texto-ingresado::placeholder {
@@ -503,7 +497,6 @@ texto-final
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 150%;
     
 
     
@@ -526,7 +519,7 @@ texto-final
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    margin: 16px 0px 0px 240px;
+    margin: 16px auto 0px 9%;
     width: 280px;
   }
 
@@ -574,15 +567,15 @@ texto-final
 
   .botones {
     display: inline-flex;
-    margin: 16px 40px 72px 240px;
+    margin: 16px auto 72px 8%;
     width: 680px;
   }
 
   .texto-salida {
     height: 944px;
     width: auto;
-    min-width: 400px;
-    margin: 40px 40px 40px 10px;
+    min-width: 350px;
+    margin: 10% 40px 15% 20%;
     
 
     background: #ffffff;
@@ -635,27 +628,14 @@ texto-final
     margin: 0px 32px 243px 32px;
   }
 
-  /* Este código CSS define un contenedor de cuadrícula con dos columnas y cuatro filas, donde cada fila
-  tiene la misma altura. La propiedad `grid-template-columns` establece que el ancho de cada columna
-  sea la mitad del espacio disponible, y la propiedad `grid-template-rows` establece que la altura de
-  cada fila sea un cuarto del espacio disponible. Las propiedades `grid-column-gap` y `grid-row-gap`
-  establecen el espacio entre las columnas y las filas en 0 píxeles. Esta cuadrícula se usa para
-  diseñar los diferentes elementos de la página, con cada elemento asignado a un área de cuadrícula
-  específica usando la propiedad `grid-area`. */
   .parent {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto-fit;
     grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-
-  /* Este código CSS define la posición del elemento con la clase "logo-alura" dentro de un contenedor de
-  cuadrícula. La propiedad "área de cuadrícula" se usa para especificar el tamaño y la ubicación del
-  elemento de cuadrícula dentro de la cuadrícula especificando las posiciones de inicio de fila de
-  cuadrícula, inicio de columna de cuadrícula, final de fila de cuadrícula y final de columna de
-  cuadrícula. En este caso, el elemento "logo-alura" se coloca en la primera fila y la primera columna
-  de la cuadrícula, ocupando una fila y una columna. */
+  
   .logo-alura {
     grid-area: 1 / 1 / 2 / 2;
   }
@@ -671,4 +651,5 @@ texto-final
   .texto-salida {
     grid-area: 1 / 2 / 5 / 3;
   }
+  
 }
